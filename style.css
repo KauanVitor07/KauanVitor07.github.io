@@ -1,0 +1,200 @@
+h1{
+        
+    font-size: 60px;
+
+    text-align: center;
+    
+    }
+
+h2{
+        font-size: 35px;
+    }
+
+ul {
+        list-style-type: none;
+    }
+
+li{
+
+        list-style-type:none ;
+    }
+
+.list{
+
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+    }
+
+.social-icon {
+        margin-left: 10px;
+        height: 30px;
+        width: 30px;
+
+    }
+
+.social-icon-2{
+        margin-left: 10px;
+        height: 30px;
+        width: 40px;
+    }
+
+.wiki{
+    text-align: start;
+    font-size: 40px;
+    margin-left: 170px;
+}
+
+.text{
+    max-width: 600px;
+    margin: 0 auto;
+
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    
+}
+
+.proj{
+    text-align:center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    margin-left: 20px;
+    font-size: 50px;
+}
+
+.nba{
+    border-radius: 2cqb;
+    display: block; /* Isso remove o espaço embaixo da imagem */
+    margin-left: 30px;
+    margin-bottom: 20px;
+
+    filter: grayscale(100%); /* Faz a imagem ficar preto e branco */
+    transition: filter 0.3s ease; /* Cria uma transição suave */
+}
+
+.nba:hover{
+    filter: grayscale(0%); /* Remove o filtro de preto e branco ao passar o cursor */
+}
+
+h2{
+    color: black;
+}
+
+.text{
+    font-size: 18px;
+}
+
+.titulo{
+    color: #000000;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: flex-start; /* Alinha todos os itens no topo */
+    gap: 20px; /* Espaço entre os itens */
+    width: 100%; /* Faz o container ocupar 100% da largura */
+    padding: 0 10px; /* Espaçamento nas laterais para não grudar na borda */
+    box-sizing: border-box; /* Garantir que o padding seja incluído na largura total */
+    flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo, se necessário */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Estilo para cada item dentro do container */
+.item-1, .item-2, .item-3 {
+     /* Cor de fundo */
+    padding: 20px; /* Espaço interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do item */
+    color: white; /* Cor do texto */
+    min-width: 280px; /* Largura mínima para os itens não ficarem muito pequenos */
+    flex: 1 1 280px; /* Faz os itens ocuparem 1 parte do espaço disponível e quebrarem automaticamente se necessário */
+    box-sizing: border-box; /* Para garantir que o padding seja contado dentro da largura do item */
+}
+
+/* Aumentando a largura mínima de cada item para melhorar o layout */
+.item-1, .item-2, .item-3 {
+    flex: 1 1 280px; /* Todos os itens ocupam espaço igual e têm largura mínima */
+}
+
+/* cor da palavra*/
+span{
+    font-size: 15px;
+    color: rgb(60, 29, 235);
+}
+
+body{
+    background-color: #eef2fa;
+}
+
+.flex-container-2{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.eu{
+    border-radius: 50%;
+    height: 70%;
+    width: 60%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-left: 100px ;
+    margin-bottom: 60px;
+
+}
+
+.texto{
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+hr{
+    border: 0; /* Remove qualquer borda padrão */
+    border-top: 1px solid #000000; /* Define a espessura da linha e a cor */
+    margin: 20px 0; /* Define o espaço acima e abaixo da linha */
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.item-3{
+    margin-right: 10px;
+}
+
+.texto-2{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-left: 70px;
+    font-size: 20px;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.titulo{
+    display: inline-block; /* Garante que o texto não quebre */
+    overflow: hidden; /* Esconde o texto que não foi "digitado" ainda */
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    border-right: 3px solid black; /* Faz a "barra de cursor" piscando */
+    animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite; /* Animação de digitação */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent; /* Faz a "barra de cursor" piscar */
+    }
+}
+
+
+
+
+

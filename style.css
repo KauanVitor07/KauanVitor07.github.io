@@ -1,29 +1,24 @@
 body {
     background-color: #eef2fa;
     margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 .container-global {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: 60px;
-    text-align: center;
 }
 
 .titulo {
+    font-size: 60px;
+    text-align: center;
+    color: #000000;
     display: inline-block;
     overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid black;
+    white-space: nowrap; 
+    border-right: 3px solid black; 
     animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
-    color: #000;
 }
 
 @keyframes typing {
@@ -35,30 +30,38 @@ h1 {
     50% { border-color: transparent; }
 }
 
-.flex-container-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    text-align: center;
+h2 {
+    font-size: 35px;
+    color: black;
 }
 
-.texto {
-    max-width: 500px;
-    margin: 0 auto;
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.eu {
-    border-radius: 50%;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+.list {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
 }
 
 .social-icon, .social-icon-2 {
-    margin-top: 10px;
-    display: inline-block;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.wiki {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 18px;
 }
 
 .flex-container {
@@ -66,76 +69,103 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
-.item-1, .item-2, .item-3 {
-    background-color: #4040a1;
-    color: white;
+.item {
     padding: 20px;
-    border-radius: 10px;
+    text-align: center;
     min-width: 280px;
+    flex: 1 1 280px;
     box-sizing: border-box;
 }
 
-.wiki {
-    font-size: 32px;
-    text-align: center;
+span {
+    font-size: 15px;
+    color: rgb(60, 29, 235);
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin-top: 40px;
 }
 
-.nba {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 20px auto;
+.eu {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
 }
 
-.projetos {
+.texto {
+    max-width: 500px;
+}
+
+hr {
+    border: 0; 
+    border-top: 1px solid #000000;
+    margin: 20px 0;
+}
+
+.proj {
     text-align: center;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 50px;
+}
+
+.nba {
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto 20px;
+    filter: grayscale(100%); 
+    transition: filter 0.3s ease; 
+}
+
+.nba:hover {
+    filter: grayscale(0%); 
 }
 
 .texto-2 {
-    max-width: 600px;
+    max-width: 400px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-center {
     text-align: center;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 36px;
-    }
-
-    .titulo {
-        font-size: 36px;
-    }
-
     .flex-container-2 {
         flex-direction: column;
+        text-align: center;
     }
 
     .texto {
         margin: 0 auto;
-        text-align: center;
     }
 
     .eu {
-        margin: 0 auto;
+        margin: 20px auto;
+    }
+
+    .titulo {
+        font-size: 40px;
+    }
+
+    .proj {
+        font-size: 40px;
     }
 
     .wiki {
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .texto-2 {
-        margin: 0 auto;
-    }
-
-    .nba {
-        margin: 0 auto;
+        font-size: 30px;
     }
 }
+
 

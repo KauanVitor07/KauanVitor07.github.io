@@ -198,19 +198,17 @@ hr{
   .flex-container-2 {
     flex-direction: column;
     text-align: center;
-    flex-wrap: wrap;
-  }
-
-  .texto {
-    margin-left: 0;
   }
 
   .eu {
     width: 60%;
     margin: 0 auto;
   }
-}
 
+  .texto {
+    margin-left: 0;
+  }
+}
 
 
 

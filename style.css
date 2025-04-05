@@ -195,13 +195,19 @@ hr{
 }
 
 @media (max-width: 768px) {
-  .flex.container-2 {
+  .flex-container-2 {
     flex-direction: column;
-    text-align: center; /* Opcional, para centralizar o texto */
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .texto {
+    margin-left: 0;
   }
 
   .eu {
-    width: 120px; /* Reduz um pouco o tamanho da imagem em telas menores */
+    width: 60%;
+    margin: 0 auto;
   }
 }
 

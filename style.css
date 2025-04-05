@@ -1,198 +1,85 @@
-body {
-  background-color: #eef2fa;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
+h1 { 
+    align-items: flex-start;
+    gap: 20px; 
+    width: 100%; 
+    padding: 0 10px; 
+    box-sizing: border-box; 
+    flex-wrap: wrap; 
+    margin-top: 20px; 
 }
 
-h1 {
-  font-size: 60px;
-  text-align: center;
-  color: #000;
-}
-
-h2 {
-  font-size: 35px;
-  color: black;
-}
-
-.titulo {
-  color: #000;
-  display: inline-block;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 3px solid black;
-  animation: typing 3s steps(30) 1s 1 normal both, blink 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
-}
-
-@keyframes blink {
-  50% { border-color: transparent; }
-}
-
-ul, li {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+.item-1, .item-2, .item-3 {
+    padding: 20px;
+    border-radius: 10px; 
+    text-align: center; 
+    color: white; 
+    min-width: 280px; 
+    flex: 1 1 280px; 
+    box-sizing: border-box;
 }
 
 span {
-  font-size: 15px;
-  color: rgb(60, 29, 235);
+    font-size: 15px;
+    color: rgb(60, 29, 235);
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid #000;
-  margin: 20px 30px;
-}
-
-/* === CONTAINERS === */
-.container-global {
-  padding: 0 60px;
-  max-width: 1200px;
-  margin: 0 auto;
+body {
+    background-color: #eef2fa;
 }
 
 .flex-container-2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
-  margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 20px;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-top: 20px;
-  box-sizing: border-box;
+.eu {
+    border-radius: 50%;
+    height: 70%;
+    width: 60%;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 60px;
 }
 
-/* === TEXTOS === */
 .texto {
-  font-size: 18px;
-  max-width: 600px;
-  flex: 1;
+    margin-left: 90px;
+    margin-top: 50px;
+}
+
+hr {
+    border: 0; 
+    border-top: 1px solid #000000;
+    margin: 20px 0;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.item-3 {
+    margin-right: 10px;
 }
 
 .texto-2 {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: justify;
-  padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-left: 70px;
+    font-size: 20px;
 }
 
-.wiki {
-  font-size: 40px;
-  margin: 0 auto;
-  text-align: center;
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }
 
-.proj {
-  text-align: center;
-  margin: 100px 0 80px;
-  font-size: 50px;
-}
-
-/* === IMAGENS === */
-.eu {
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
-}
-
-.nba {
-  border-radius: 20px;
-  display: block;
-  margin: 20px auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-  max-width: 100%;
-  height: auto;
-}
-
-.nba:hover {
-  filter: grayscale(0%);
-}
-
-/* === ÍCONES === */
-.social-icon, .social-icon-2 {
-  margin: 10px 5px 0;
-  height: 30px;
-  width: 30px;
-}
-
-/* === ITENS === */
-.item-1, .item-2, .item-3 {
-  padding: 20px;
-  text-align: center;
-  color: black;
-  min-width: 280px;
-  flex: 1 1 280px;
-  box-sizing: border-box;
-  background-color: transparent;
-}
-
-.list {
-  font-size: 20px;
-  color: rgb(0, 0, 0);
-}
-
-/* === MEDIA QUERIES === */
-@media (max-width: 768px) {
-  .container-global {
-    padding: 0 20px;
-  }
-
-  .flex-container-2 {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .titulo {
-    font-size: 45px;
-  }
-
-  .texto {
-    margin: 0;
-  }
-
-  .wiki {
-    font-size: 30px;
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .proj {
-    font-size: 40px;
-    margin: 60px 0;
-  }
-
-  .texto-2 {
-    padding: 10px;
-    margin-left: 0;
-  }
-
-  .nba {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+@keyframes blink {
+    50% {
+        border-color: transparent; 
+    }
 }
 
 

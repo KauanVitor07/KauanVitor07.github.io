@@ -210,5 +210,15 @@ hr{
   }
 }
 
+.container-global {
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  .container-global {
+    padding: 0 15px;
+  }
+}
+
 
 
